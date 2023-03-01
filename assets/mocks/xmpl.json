@@ -1,0 +1,28 @@
+{
+    "response": [
+        {
+            "name": "Bulbasaur",
+            "archive": "https://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png"
+        },
+        {
+            "name":"Charmader",
+            "archive":"https://img.pokemondb.net/sprites/black-white/normal/charmander.png"
+        },
+        {
+            "name":"Squirtle",
+            "archive":"https://img.pokemondb.net/sprites/black-white/normal/squirtle.png"
+        },
+        {
+            "name":"Chikorita",
+            "archive":"https://img.pokemondb.net/sprites/black-white/normal/chikorita.png"
+        },
+        {
+            "name":"Cyndaquil",
+            "archive":"https://img.pokemondb.net/sprites/black-white/normal/cyndaquil.png"
+        },
+        {
+            "name":"Totodile",
+            "archive":"https://img.pokemondb.net/sprites/black-white/normal/totodile.png"
+        }
+    ]
+}
