@@ -39,6 +39,7 @@ function starting(items) {
           arr.push(...items);
         }
         pool.push(...shuffle(arr));
+        console.log(pool);
         boxesClone.addEventListener(
           'transitionstart',
           function () {
@@ -85,18 +86,31 @@ function starting(items) {
       const boxes = door.querySelector('.boxes');
       const duration = parseInt(boxes.style.transitionDuration);
       boxes.style.transform = 'translateY(0)';
-      await new Promise((resolve) => setTimeout(resolve, duration * 10));
+      await new Promise((resolve) => setTimeout(resolve, duration * 15));
     }
   }
 
   function shuffle([...arr]) {
     let m = arr.length;
     while (m) {
-      const i = Math.floor(Math.random() * m--);
+      // i = posición en la que va a caer
+      const i = Math.floor(1);
+      console.log(m--);
       [arr[m], arr[i]] = [arr[i], arr[m]];
     }
     return arr;
   }
 
   init();
+}
+
+function start() {
+  document.getElementById('dno-1').classList.remove('dno');
+  document.getElementById('dno-2').classList.remove('dno');
+  document.getElementById('frames').classList.add('Animation-frames');
+  setTimeout(() => {
+    document.getElementById('dno-1').classList.add('dno');
+    document.getElementById('dno-2').classList.add('dno');
+    document.getElementById('frames').classList.remove('Animation-frames');
+  }, 2000)
 }
